@@ -1,0 +1,235 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: 'Roboto', sans-serif;
+  --font-weight-bold: 800; /* Roboto Bold */
+  --font-personalizada: 1500; /* Roboto  */
+}
+
+:root {
+  --color-whiteBone: #F5F5F5;
+  --color-salmon: #EF7F6D;
+  --color-carmine-pink: #E94F37;
+  --color-spanish-pink: #F7BFB6;
+  --color-soap: #CDC3E6;
+  --color-blue-bell: #A491D2;
+  --color-pale-lavender: #D4DCFF;
+  --color-platinum: #EAEAEA;
+  --color-gray: #E0E0E0;
+  --color-dark-gray: #333;
+  --color-black: #000;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa el 100% del alto de la ventana */
+}
+
+aside {
+  background-color: #f8f9fa;
+}
+
+.container {
+  display: flex;
+  width: 100%; /* Ocupa el 100% del ancho */
+  height: 100vh; /* Ocupa el 100% del alto de la ventana */
+  max-width: none; /* Elimina el límite de ancho máximo */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contacts Section */
+.contacts {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ocupa el 100% del alto del contenedor */
+  border: 1px solid var(--color-gray); /* Línea de 1px de grosor */
+}
+
+/* Estilos para el estado del usuario */
+.user-status {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+.user-info {
+  flex-grow: 1;
+  margin-left: 10px; 
+}
+
+.username {
+  font-weight: 300;
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.last-status {
+  font-size: 0.9em;
+  color: #777;
+  margin: 0;
+}
+
+.icons {
+  display: flex;
+  gap: 10px; 
+  align-items: center;
+}
+
+.icons i {
+  font-size: 1.2em;
+  color: #555;
+  cursor: pointer;
+}
+
+.tiny-thumbnail {
+  width: 40px;  /* Ancho pequeño */
+  height: 40px; /* Alto pequeño */
+  border-radius: 50%; /* Opcional: para hacerla circular */
+  object-fit: cover; /* Asegura que la imagen se ajuste */
+}
+
+
+
+/* Estilos para el botón "Nuevo Chat" */
+.btn-new-chat {
+  display: flex;
+  justify-content: center; /* Centra el texto horizontalmente */
+  align-items: center; /* Centra el texto verticalmente */
+  width: 200px; /* Ancho del botón */
+  height: 40px; /* Alto del botón */
+  margin: 20px auto; /* Centra el botón en su contenedor */
+  background-color: var(--color-blue-bell); /* Color normal */
+  color: white;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-bold);
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Estado Hover */
+.btn-new-chat:hover {
+  background-color: var(--color-soap); /* Cambia el color al pasar el mouse */
+}
+
+/* Estado Focus */
+.btn-new-chat:focus {
+  background-color: var(--color-gray); /* Cambia el color al recibir foco */
+  outline: none; /* Elimina el borde predeterminado del foco */
+  color: var(--color-dark-gray);
+  box-shadow: 0 0 0 3px rgba(169, 145, 210, 0.5); /* Añade un sombreado para el foco */
+}
+.linea {
+  border-bottom: 1px solid var(--color-gray); /* Línea de 1px de grosor */
+  width: 380px;
+
+}
+.contacts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  padding: 10px; 
+  background-color: #f8f9fa;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.normal-thumbnail {
+  width: 50px;  /* Ancho normal */
+  height: 50px; /* Alto normal */
+  border-radius: 50%; /* Opcional: para hacerla circular */
+  object-fit: cover; /* Asegura que la imagen se ajuste */
+}
+
+.name {
+  font-weight: 500;
+  margin: 0;
+}
+
+.last-message {
+  font-size: 0.9em;
+  color: #777;
+  margin: 0;
+}
+
+/* Main Section */
+.main {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100%; /* Ocupa el 100% del alto del contenedor */
+  background-color: var(--color-whiteBone);
+}
+
+.centered-content {
+  text-align: center;
+}
+
+.logo {
+  width: 350px;  /* Ancho pequeño */
+  height: 350px; /* Alto pequeño */
+  margin-bottom: 20px;
+  border-radius: 5%; /* Opcional: para hacerla circular */
+}
+
+h1 {
+  font-size: calc(2rem + 1vw);
+  margin: 0;
+  font-weight: var(--font-personalizada); 
+}
+
+.subtitle-main {
+  color: #666;
+  line-height: 1.5;
+  padding: 0 1.8rem;
+}
+
+p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* ¿Qué hace calc(1rem + 1vw)?
+Esta expresión combina dos unidades de medida:
+1rem: Representa el tamaño de la fuente relativo al tamaño de la fuente del elemento raíz (<html>). Por defecto, en la mayoría de los navegadores, 1rem equivale a 16px (a menos que se haya cambiado manualmente).
+1vw: Representa el 1% del ancho de la ventana del navegador (viewport width). Si el ancho de la ventana es 1000px, entonces 1vw equivale a 10px.
+Al sumar 1rem + 1vw, obtienes un tamaño de fuente que es dinámico:
+Tiene una base fija (1rem).
+Añade un componente variable (1vw) que cambia según el ancho de la ventana.
+¿Cómo funciona en la práctica?
+Supongamos que:
+El tamaño de la fuente raíz (<html>) es 16px (valor predeterminado).
+El ancho de la ventana del navegador es 1000px.
+Entonces:
+1rem = 16px
+1vw = 1% de 1000px = 10px
+calc(1rem + 1vw) = 16px + 10px = 26px */
